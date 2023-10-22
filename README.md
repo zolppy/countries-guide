@@ -20,3 +20,6 @@ Aplicação com interface intuitiva e agradável, construída a partir de boas p
 * BEM;
 * Typescript;
 * SCSS.
+
+## Outros
+* Link à API utilizada: https://restcountries.com/
