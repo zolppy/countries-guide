@@ -1,0 +1,46 @@
+<!DOCTYPE html />
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aplicativo que consulta informações a respeito de países." />
+  <title>Guia de Países</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Comfortaa - Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Reset de estilos -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <!-- Meus arquivos-fonte -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <main>
+    <div id="container">
+      <h1 id="title">Guia de Países</h1>
+      <h2 id="description">Informe o nome de algum país abaixo para consultar informações a respeito dele.</h2>
+      <form>
+        <label for="country-input">País:</label>
+        <input type="search" id="country-input" placeholder="Brazil" />
+        <button type="submit" id="search-button">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <div id="country-info" class="hide">
+        <img src="" id="flag" />
+        <h3 id="country-name"></h3>
+        <div id="infos">
+          <h4>Capital: <span id="capital"></span></h4>
+          <h4>Continente: <span id="continent"></span></h4>
+          <h4>População: <span id="population"></span></h4>
+          <h4>Idioma(s): <span id="common-language"></span></h4>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
