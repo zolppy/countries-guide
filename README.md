@@ -1,7 +1,5 @@
 # Country Guide
 
-Aplicação com interface intuitiva e agradável, construída a partir de boas práticas de desenvolvimento de software, que permite criação e gerenciamento de tarefas.
-
 Aplicação com interface intuitiva e agradável, construída a partir de boas práticas de desenvolvimento de software, que permite consultar informações a respeito de países.
 
 ## O que é possível fazer
