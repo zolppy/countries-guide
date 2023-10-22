@@ -7,9 +7,6 @@ Aplicação com interface intuitiva e agradável, construída a partir de boas p
 ## O que é possível fazer
 * Consultar dados a respeito de países.
 
-## O que ainda não é possível fazer
-* Consultar outros dados relevantes acerca de países.
-
 ## Melhorias futuras
 * Consultar e exibir mais dados relevantes acerca de países.
 
