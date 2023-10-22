@@ -38,16 +38,20 @@ const showCountryInfo = (country) => {
   countryInfoContainer.classList.remove('hide');
 }
 
-const hiddenDescription = () => {
-  const description = document.querySelector('#description');
-
-  description.classList.add('hide');
-}
-
 const main = async (e) => {
   e.preventDefault();
-  hiddenDescription();
-  showCountryInfo(await getCountry(getCountryName()));
+
+  const loaderElement = document.querySelector('.loader');
+  loaderElement.classList.remove('hide');
+
+  const description = document.querySelector('#description');
+  description.classList.add('hide');
+
+  const country = await getCountry(getCountryName());
+
+  loaderElement.classList.add('hide');
+
+  showCountryInfo(country);
 }
 
 searchButton.addEventListener('click', (e) => main(e));
