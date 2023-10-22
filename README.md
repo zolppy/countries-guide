@@ -6,7 +6,8 @@ Aplicação com interface intuitiva e agradável, construída a partir de boas p
 * Consultar dados a respeito de países.
 
 ## Melhorias futuras
-* Consultar e exibir mais dados relevantes acerca de países.
+* Consultar e exibir mais dados relevantes acerca de países;
+* Tratamento de erros.
 
 ## Principais conceitos ou tecnologias utilizados
 * HTML5;
