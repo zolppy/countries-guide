@@ -1,4 +1,4 @@
-const searchButton = document.querySelector('#search-button');
+const searchButton = document.querySelector('#countries-guide__search-button');
 
 const cleanInput = (input) => {
   input.value = '';
@@ -6,11 +6,11 @@ const cleanInput = (input) => {
 }
 
 const getCountryName = () => {
-  const countryInput = document.querySelector('#country-input');
-  let countryName = countryInput.value;
+  const countryNameInput = document.querySelector('#countries-guide__name-input');
+  let countryName = countryNameInput.value;
   
   if (countryName) {
-    cleanInput(countryInput);
+    cleanInput(countryNameInput);
   
     return countryName;
   }
@@ -31,16 +31,16 @@ const getCountry = async (countryName) => {
 }
 
 const showCountryInfo = (country) => {
-  document.querySelector('#country-name').textContent = country[0].name.common;
-  document.querySelector('#capital').textContent = country[0].capital;
-  document.querySelector('#continent').textContent = country[0].continents[0];
-  document.querySelector('#population').textContent = country[0].population;
-  document.querySelector('#common-language')
+  document.querySelector('#countries-guide__name').textContent = country[0].name.common;
+  document.querySelector('#countries-guide__capital').textContent = country[0].capital;
+  document.querySelector('#countries-guide__continent').textContent = country[0].continents[0];
+  document.querySelector('#countries-guide__population').textContent = country[0].population;
+  document.querySelector('#countries-guide__common-language')
     .textContent = Object.values(country[0].languages).toString().split(',').join(', ');
 
-  document.querySelector('#flag').src = country[0].flags.svg;
+  document.querySelector('#countries-guide__flag').src = country[0].flags.svg;
 
-  document.querySelector('#country-info').classList.remove('hide');
+  document.querySelector('#countries-guide__info').classList.remove('countries-guide__info--hidden');
 }
 
 const main = async (e) => {
@@ -48,23 +48,23 @@ const main = async (e) => {
   
   let countryName = getCountryName();
 
-  document.querySelector('#country-info').classList.add('hide');
+  document.querySelector('#countries-guide__info').classList.add('countries-guide__info--hidden');
 
   if (countryName) {
-    const description = document.querySelector('#description');
-    description.classList.add('hide');
+    const description = document.querySelector('#countries-guide__description');
+    description.classList.add('countries-guide__description--hidden');
 
-    const loaderElement = document.querySelector('#loader');
-    loaderElement.classList.remove('hide');
+    const loaderElement = document.querySelector('#countries-guide__loader');
+    loaderElement.classList.remove('countries-guide__loader--hidden');
   
     try {
       const country = await getCountry(countryName);
 
-      loaderElement.classList.add('hide');
+      loaderElement.classList.add('countries-guide__loader--hidden');
     
       showCountryInfo(country);
     } catch (e) {
-      description.classList.remove('hide');
+      description.classList.remove('countries-guide__description--hidden');
       alert('País inválido');
     }
   }

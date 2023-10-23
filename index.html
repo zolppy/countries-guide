@@ -1,4 +1,4 @@
-<!DOCTYPE html />
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
@@ -20,25 +20,25 @@
 </head>
 <body>
   <main>
-    <div id="container">
-      <h1 id="title">Guia de Países</h1>
-      <h2 id="description">Informe o nome de algum país abaixo para consultar informações a respeito dele.</h2>
+    <div id="countries-guide">
+      <h1 id="countries-guide__title">Guia de Países</h1>
+      <h2 id="countries-guide__description">Informe o nome de algum país abaixo para consultar informações a respeito dele.</h2>
       <form>
-        <label for="country-input">País:</label>
-        <input type="search" id="country-input" placeholder="Brazil" />
-        <button type="submit" id="search-button">
+        <label for="countries-guide__name-input">País:</label>
+        <input type="search" id="countries-guide__name-input" placeholder="Brazil" />
+        <button type="submit" id="countries-guide__search-button">
           <i class="bi bi-search"></i>
         </button>
       </form>
-      <div id="loader" class="hide"></div>
-      <div id="country-info" class="hide">
-        <img src="" id="flag" />
-        <h3 id="country-name"></h3>
-        <div id="infos">
-          <h4>Capital: <span id="capital"></span></h4>
-          <h4>Continente: <span id="continent"></span></h4>
-          <h4>População: <span id="population"></span></h4>
-          <h4>Idioma(s): <span id="common-language"></span></h4>
+      <div id="countries-guide__loader" class="countries-guide__loader--hidden"></div>
+      <div id="countries-guide__info" class="countries-guide__info--hidden">
+        <img src="" id="countries-guide__flag" />
+        <h3 id="countries-guide__name"></h3>
+        <div id="countries-guide__infos">
+          <h4>Capital: <span id="countries-guide__capital"></span></h4>
+          <h4>Continente: <span id="countries-guide__continent"></span></h4>
+          <h4>População: <span id="countries-guide__population"></span></h4>
+          <h4>Idioma(s): <span id="countries-guide__common-language"></span></h4>
         </div>
       </div>
     </div>

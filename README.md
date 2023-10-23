@@ -16,12 +16,12 @@ Aplicação com interface intuitiva e agradável, construída a partir de boas p
 * HTML5;
 * CSS3;
 * JavaScript;
+* BEM;
 * Fetch API;
 * Try Catch;
 * Async Functions.
 
 ## Principais conceitos ou tecnologias que podem vir a serem utilizados
-* BEM;
 * Typescript;
 * SCSS.
 

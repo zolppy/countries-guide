@@ -14,10 +14,9 @@ body {
   background-image: linear-gradient(to bottom, skyblue, #fff);
   color: var(--soft-black);
   height: 100vh;
-  position: relative;
 }
 
-#container {
+#countries-guide {
   background-color: #fff;
   border: 7px double var(--soft-black);
   border-radius: 10px;
@@ -32,27 +31,27 @@ body {
   align-items: center;
 }
 
-#title,
-#description {
+#countries-guide__title,
+#countries-guide__description {
   margin-bottom: 25px;
 }
 
-#title {
+#countries-guide__title {
   font-size: 1.7rem;
   font-weight: bold;
 }
 
-#description {
+#countries-guide__description {
   font-size: 1.15rem;
   text-align: justify;
 }
 
-#country-input,
-#search-button {
+#countries-guide__name-input,
+#countries-guide__search-button {
   border: none;
 }
 
-#country-input {
+#countries-guide__name-input {
   border-bottom: 2px solid var(--soft-black);
   font-size: 1.05rem;
   outline: none;
@@ -60,31 +59,31 @@ body {
   width: 180px;
 }
 
-#country-input:focus {
+#countries-guide__name-input:focus {
   border-color: var(--soft-blue);
 }
 
-#country-input::placeholder {
+#countries-guide__name-input::placeholder {
   font-size: 1rem;
 }
 
-#search-button {
+#countries-guide__search-button {
   background-color: var(--soft-blue);
   color: #fff;
   border-radius: 5px;
   padding: 5px 12px;
 }
 
-#search-button:hover {
+#countries-guide__search-button:hover {
   cursor: pointer;
   transform: scale(.95);
 }
 
-#search-button:active {
+#countries-guide__search-button:active {
   transform: scale(1);
 }
 
-#loader {
+#countries-guide__loader {
   margin-top: 25px;
   border: 16px solid #f3f3f3;
   border-top: 16px solid var(--soft-blue);
@@ -99,7 +98,7 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-#country-info {
+#countries-guide__info {
   line-height: 1.5rem;
   margin: 25px 0 0 25px;
   width: 100%;
@@ -108,33 +107,33 @@ body {
   align-items: center;
 }
 
-#flag {
+#countries-guide__flag {
   width: 45%;
 }
 
-#country-name,
-#infos {
+#countries-guide__name,
+#countries-guide__infos {
   margin-top: 15px;
 }
 
-#country-name,
-#infos h4 {
+#countries-guide__name,
+#countries-guide__infos h4 {
   font-weight: bold;
 }
 
-#country-name {
+#countries-guide__name {
   font-size: 1.15rem;
   text-transform: uppercase;
 }
 
-#infos {
+#countries-guide__infos {
   width: 100%;
 }
 
-#infos span {
+#countries-guide__infos span {
   font-weight: normal;
 }
 
-.hide {
+*[class*="hidden"] {
   display: none !important;
 }
