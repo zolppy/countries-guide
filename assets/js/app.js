@@ -48,6 +48,8 @@ const main = async (e) => {
   
   let countryName = getCountryName();
 
+  document.querySelector('#country-info').classList.add('hide');
+
   if (countryName) {
     const description = document.querySelector('#description');
     description.classList.add('hide');
