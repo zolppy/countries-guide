@@ -14,9 +14,7 @@ body {
   background-image: linear-gradient(to bottom, skyblue, #fff);
   color: var(--soft-black);
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 #container {
@@ -25,6 +23,10 @@ body {
   border-radius: 10px;
   padding: 15px;
   width: 320px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,13 +43,8 @@ body {
 }
 
 #description {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   text-align: justify;
-}
-
-#country-input,
-#country-input::placeholder {
-  font-size: 1.05rem;
 }
 
 #country-input,
@@ -67,6 +64,10 @@ body {
   border-color: var(--soft-blue);
 }
 
+#country-input::placeholder {
+  font-size: 1rem;
+}
+
 #search-button {
   background-color: var(--soft-blue);
   color: #fff;
@@ -83,7 +84,7 @@ body {
   transform: scale(1);
 }
 
-.loader {
+#loader {
   margin-top: 25px;
   border: 16px solid #f3f3f3;
   border-top: 16px solid var(--soft-blue);

@@ -1,4 +1,4 @@
-# Country Guide
+# Countries Guide
 
 Aplicação com interface intuitiva e agradável, construída a partir de boas práticas de desenvolvimento de software, que permite consultar informações a respeito de países.
 
@@ -9,7 +9,8 @@ Aplicação com interface intuitiva e agradável, construída a partir de boas p
 
 ## Melhorias futuras
 * Consultar e exibir mais dados relevantes acerca de países;
-* Mensagens de erro melhores ao usuário, ao invés de simplesmente "alert".
+* Mensagens de erro melhores ao usuário, ao invés de simplesmente "alert";
+* Integração com ChatGPT para fornecimento de descrições de países.
 
 ## Principais conceitos ou tecnologias utilizados
 * HTML5;

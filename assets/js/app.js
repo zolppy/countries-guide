@@ -54,7 +54,7 @@ const main = async (e) => {
     const description = document.querySelector('#description');
     description.classList.add('hide');
 
-    const loaderElement = document.querySelector('.loader');
+    const loaderElement = document.querySelector('#loader');
     loaderElement.classList.remove('hide');
   
     try {
