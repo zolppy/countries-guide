@@ -3,14 +3,13 @@
 Aplicação com interface intuitiva e agradável, construída a partir de boas práticas de desenvolvimento de software, que permite consultar informações a respeito de países.
 
 ## O que tem ou pode realizar
-* Consultar dados a respeito de países;
+* Consultar dados relevantes a respeito de qualquer país;
 * Tratamento de erros simples;
 * Animação de carregamento.
 
 ## Melhorias futuras
-* Consultar e exibir mais dados relevantes acerca de países;
 * Mensagens de erro melhores ao usuário, ao invés de simplesmente "alert";
-* Integração com ChatGPT para fornecimento de descrições de países.
+* Melhorias na UI.
 
 ## Principais conceitos ou tecnologias utilizados
 * HTML5;
